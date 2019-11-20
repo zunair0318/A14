@@ -1,0 +1,36 @@
+<html>
+   <head>   
+      <script type = "text/javascript">
+         <!--
+            function WriteCookie() {
+               if( document.myform.customer.value == "" ) {
+                  alert("Enter some value!");
+                  return;
+               }
+               cookievalue = escape(document.myform.customer.value) + ";";
+               document.cookie = "name=" + cookievalue;
+               document.write ("Setting Cookies : " + "Name = " + cookievalue );
+            }
+         //-->
+      </script>      
+   </head> 
+   
+   <body>     
+   <h1> Setting Cookies</h1> 
+      <form class = "form" name = "myform" action = "">
+         Enter name: <input type = "text" name = "customer"/>
+         <input type = "button" value = "Set Cookie" onclick = "WriteCookie();"/>
+      </form>
+      <footer>
+      	Copyright: Zunair Ahmed Nov 20, 2019 
+      </footer>   
+   </body>
+</html>
+
+
+<style>
+	body {background-color: black;}
+	h1 {text-align: center; padding-top: 2in; color: white;}
+	form {margin-left: 40%; color: white;}
+	footer {color:white; text-align: center; padding-top: .5in;}
+</style>
